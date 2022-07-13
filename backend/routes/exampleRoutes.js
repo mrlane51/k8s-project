@@ -1,20 +1,18 @@
 const express = require('express');
 const router = express.Router();
+const {
+    getEx,
+    postEx,
+    putEx,
+    deleteEx,
+} = require ('../controllers/exController');
 
-router.get('/', (req, res) => {
-    res.status(200).json({ message: 'GET example'})
-})
+router.get('/', getEx )
 
-router.post('/', (req, res) => {
-    res.status(200).json({ message: 'POST example'})
-})
+router.post('/', postEx )
 
-router.put('/:id', (req, res) => {
-    res.status(200).json({ message: `PUT example ${req.params.id}` })
-})
+router.put('/:id', putEx )
 
-router.delete('/:id', (req, res) => {
-    res.status(200).json({ message: `DELETE example ${req.params.id}` })
-})
+router.delete('/:id', deleteEx )
 
 module.exports = router;
