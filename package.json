@@ -1,0 +1,29 @@
+{
+  "name": "k8s-multinode-project",
+  "version": "1.0.0",
+  "description": "mern-stack-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrlane51/k8s-project.git"
+  },
+  "author": "mrlane51",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrlane51/k8s-project/issues"
+  },
+  "homepage": "https://github.com/mrlane51/k8s-project#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
