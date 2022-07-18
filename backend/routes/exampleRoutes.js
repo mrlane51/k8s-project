@@ -1,12 +1,16 @@
 const express = require('express');
-// importing 
+
+// create new router obj to handle requests
 const router = express.Router();
+
+// importing the controller module files
 const {
     getEx,
     postEx,
     putEx,
     deleteEx,
 } = require ('../controllers/exController');
+
 
 router.get('/', getEx )
 

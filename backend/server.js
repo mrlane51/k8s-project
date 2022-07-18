@@ -1,6 +1,7 @@
-const dotenv = require('dotenv').config();
 const colors = require('colors');
 const path = require('path');
+// init env variables
+const dotenv = require('dotenv').config();
 
 // load express module
 // node framework for handling HTTP requests
@@ -8,7 +9,7 @@ const express = require('express');
 
 // load env port to desire port number
 const port = process.env.PORT || 3000;
-// creates a new express application
+// initialize express
 const app = express();
 
 // creating a path to the database file for connection
