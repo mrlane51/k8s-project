@@ -1,5 +1,6 @@
 const Input = require('../models/modelEx')
 
+// 
 const getEx = async (req, res) => {
     const userInput = await Input.find()
     res.status(200).json(userInput)

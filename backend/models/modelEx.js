@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// user input schema
 const inputSchema = mongoose.Schema({
     text: {
         type : String,
